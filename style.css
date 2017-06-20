@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Kranky');
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Kranky', cursive;
+}
+
+body{
+  margin:1em;
+  min-width:40em;
+  max-width:60em;
+  margin:0 auto;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button{
+  margin-top:1em;
+  padding:.3em;
+  font-size:2em;
+}
+
+#solve{
+  margin-left:calc(50% - 3em);
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+h1{
+  position: absolute;
+  text-align:center;
+  font-size: 3em;
+  top:3%;
+  left:calc(50% - 3.4em);
+}
+
+input{
+  width:90%;
+  height:100%;
+  border:none;
+  font-size:100%;
+  text-align: center;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+table:hover{
+  cursor: 'text';
+}
+
+#wrapper {
+  margin:0 auto;
+  width: 50%;
+  position: relative;
+  padding-top:50%;
+  margin-top:9%;
+}
+
+.board{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+}
+
+  table{
+    border-spacing:0;
+    border-collapse: collapse;
+    width:100%;
+    height:calc(100%);
+    table-layout: fixed;
+    border:.3em solid black;
+  }
+
+    td{
+      text-align:center;
+      border: 1px solid black;
+      margin:0;
+    }
+
+    td:nth-child(3), td:nth-child(6){
+      border-right: .3em solid black;
+    }
+
+    tr:nth-child(3) td, tr:nth-child(6) td{
+      border-bottom: .3em solid black;
+    }
